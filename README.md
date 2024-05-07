@@ -1,15 +1,9 @@
-## Hello World
-
-#This is my personal website
-
-Best
-SGP
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Goutham Sai Pydi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,7 +44,7 @@ SGP
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to My Personal Website</h1>
     </header>
     <nav>
         <a href="#home">Home</a>
