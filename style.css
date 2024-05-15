@@ -74,22 +74,10 @@ section {
     white-space: nowrap;
 }
 
-.typing {
-    animation: typing-animation 5s steps(40) forwards;
-}
-
-@keyframes typing-animation {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-
 .quote-author {
     color: #d2d2d2; /* Grey text color for the author */
     font-weight: bold; /* Bold font for the author */
 }
-
-
 
 
 footer {
