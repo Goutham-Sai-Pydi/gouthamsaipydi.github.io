@@ -1,5 +1,6 @@
 // Array of quotes with authors
 const quotes = [
+    {quote: "The only way to do great work is to love what you do.", author: "Steve Jobs"},
     {quote: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs"},
     {quote: "Stay hungry, stay foolish.", author: "Steve Jobs"},
     {quote: "Your time is limited, so don't waste it living someone else's life.", author: "Steve Jobs"},
@@ -57,37 +58,6 @@ const quotes = [
     {quote: "Life is what happens when you're busy making other plans.", author: "John Lennon"},
     {quote: "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.", author: "Mark Twain"},
     {quote: "You can't use up creativity. The more you use, the more you have.", author: "Maya Angelou"}
-];
-
-// Function to get a random quote
-function getRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    return quotes[randomIndex];
-}
-
-// Function to update the quote box with a new quote
-function updateQuote() {
-    const quoteBox = document.getElementById('quote-box');
-    const {quote, author} = getRandomQuote();
-    quoteBox.innerHTML = `<p class="quote-text">${quote}</p><p class="quote-author">- ${author}</p>`;
-}
-
-// Display a random quote by default
-document.addEventListener('DOMContentLoaded', function() {
-    updateQuote();
-});
-
-// Add click event listener to the quote box to update the quote
-document.getElementById('quote-box').addEventListener('click', updateQuote);
-
-// Function to add typing animation class
-function addTypingAnimation() {
-    quoteText.classList.add('typing');
-}
-
-// Add typing animation when the page loads
-window.addEventListener('load', addTypingAnimation);
-    
 ];
 
 // Function to get a random quote
