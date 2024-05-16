@@ -74,15 +74,13 @@ section {
     white-space: nowrap;
 }
 
-.typing {
-    animation: typing-animation 5s steps(40) forwards;
+/* Center the iframe horizontally */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Center vertically within the viewport */
 }
-
-@keyframes typing-animation {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
 
 .quote-author {
     color: #222222; /* Grey text color for the author */
