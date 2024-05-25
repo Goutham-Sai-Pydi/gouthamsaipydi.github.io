@@ -6,17 +6,55 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #D2E9E9; /* Light grey background */
+    background-color: #D2E9E9;
     color: #000000; /* Text color */
+    text-align: center;
 }
 
+.scrolling-banner {
+    position: fixed;
+    top: -60px; /* Initial position above viewport */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change this to match your header color */
+    color: #fff;
+    padding: 10px;
+    z-index: 1000; /* Ensures it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s; /* Add smooth transition */
+  }
+  
+        /* Style for the name */
+        .name {
+          font-size: 24px;
+          font-weight: bold;
+          margin-left: 20px;
+        }
+        
+        /* Style for the navigation */
+        .navigation {
+          margin-right: 20px;
+        }
+        
+        .navigation a {
+          color: #fff;
+          text-decoration: none;
+          margin-left: 20px;
+        }
+        
+        /* Style for the main content */
+        .content {
+          margin-top: 60px; /* Adjust according to the banner height */
+          /* Add additional styles as needed */
+        }
 header {
     background-color: #C4DFDF;
     color: #191919;
     padding: 20px 0;
     text-align: center;
 }
-
 
 nav ul {
     list-style-type: none;
@@ -36,33 +74,28 @@ nav ul li a {
 }
 
 #global-container {
-    width: 100%; /* Set the container width to 80% of the viewport width */
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%; /* Full width of the viewport */
+    text-align: center; /* Center-align child elements */
 }
-
 
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #E3F4F4; /* White background */
+    background-color: #D2E9E9; 
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(90, 86, 86, 0.1);
+    display: block; /* Ensure sections are block-level elements */
 }
 
 #quote-box {
-    width: 800px; /* Set the width of the quote box */
-    height: 50px; /* Set the height of the quote box */
-    margin: 0 auto;
+    max-width: 60%;
+    width: auto;
+    margin: 20px auto; /* Center the quote box horizontally */
     padding: 20px; /* Add padding to the quote box */
     background-color: #c3e7e7; /*  */
-    text-align: center;
     cursor: pointer;
     border-radius: 10px; /* Rounded corners */
     border: 2px solid #000000; /* Dark border */
+    text-align: center; /* Center-align text inside the quote box */
 }
 
 #quote-box:hover {
@@ -74,12 +107,20 @@ section {
     white-space: nowrap;
 }
 
-/* Center the iframe horizontally */
-.iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Optional: Center vertically within the viewport */
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    #quote-box {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    #quote-text {
+        font-size: 1.2em;
+    }
+
+    .quote-author {
+        font-size: 0.9em;
+    }
 }
 
 .quote-author {
@@ -87,12 +128,25 @@ section {
     font-weight: bold; /* Bold font for the author */
 }
 
+.footer {
+    background-color: #C4DFDF;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
 
+.footer .icons {
+    margin: 10px 0;
+}
 
+.footer .icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
 
-footer {
-    background-color: #F8F6F4;
-    color: #000000; /* text colour */
-    padding: 0px 0;
-    text-align: center; /* Center-align the text */
+.footer .icons a:hover {
+    color: #f0f0f0;
 }
