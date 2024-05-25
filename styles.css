@@ -49,13 +49,17 @@ body {
           margin-top: 60px; /* Adjust according to the banner height */
           /* Add additional styles as needed */
         }
-header {
-    background-color: #C4DFDF;
-    color: #191919;
-    padding: 20px 0;
-    text-align: center;
-}
 
+header {
+            background-color: #C4DFDF;
+            color: #191919;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a:hover {
+            color: #266fb4; /* Change to your preferred hover color */
+          }
 nav ul {
     list-style-type: none;
     margin: 0;
