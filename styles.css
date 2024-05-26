@@ -11,21 +11,16 @@ body {
     text-align: center;
 }
 
-.scrolling-banner {
-    position: fixed;
-    top: -60px; /* Initial position above viewport */
-    left: 0;
-    width: 100%;
-    background-color: #333; /* Change this to match your header color */
-    color: #fff;
-    padding: 10px;
-    z-index: 1000; /* Ensures it's above other content */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: top 0.3s; /* Add smooth transition */
-  }
-  
+#about {
+  flex: 1;
+}
+
+#about h2, 
+#about p {
+  text-align: left;
+}
+
+
         /* Style for the name */
         .name {
           font-size: 24px;
@@ -50,7 +45,7 @@ body {
           /* Add additional styles as needed */
         }
 
-header {
+        header {
             background-color: #C4DFDF;
             color: #191919;
             padding: 20px 0;
@@ -60,6 +55,7 @@ header {
         header a:hover {
             color: #266fb4; /* Change to your preferred hover color */
           }
+    
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -82,13 +78,20 @@ nav ul li a {
     text-align: center; /* Center-align child elements */
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #D2E9E9; 
-    border-radius: 10px; /* Rounded corners */
-    display: block; /* Ensure sections are block-level elements */
+
+.container {
+  display: flex;
+  align-items: flex-start;
 }
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #D2E9E9; 
+  border-radius: 10px; /* Rounded corners */
+  display: block; /* Ensure sections are block-level elements */
+}
+
 
 #quote-box {
     max-width: 60%;
@@ -111,6 +114,22 @@ section {
     white-space: nowrap;
 }
 
+.quote-author {
+  color: #222222; /* Grey text color for the author */
+  font-weight: bold; /* Bold font for the author */
+}
+
+.card {
+  max-width: 60%;
+  width: auto;
+  margin: 20px auto; /* Center the card horizontally */
+  padding: 20px; /* Add padding to the card */
+  background-color: #D2E9E9; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Add a subtle shadow for the card effect */
+  text-align: left; /* Left-align text inside the card */
+}
+
 /* Media Query for smaller screens */
 @media (max-width: 600px) {
     #quote-box {
@@ -127,10 +146,7 @@ section {
     }
 }
 
-.quote-author {
-    color: #222222; /* Grey text color for the author */
-    font-weight: bold; /* Bold font for the author */
-}
+
 
 .footer {
     background-color: #C4DFDF;
